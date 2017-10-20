@@ -374,9 +374,10 @@ label2.grid(row=0, column=0, columnspan=2, pady=5)
 label3 = Label(speed_frame, text="(In milliseconds)", bg="#e0e0e0")
 label3.grid(row=1, column=0, columnspan=2, pady=5)
 
-label4 = Label(speed_frame, width=(window_dimensions//16), text="\nPython implementation of \nConway's Game Of Life.\nGUI created with Tkinter\n\n\
-Code by: Carter Daly-MacPhail\nemail: cdalymac@gmail.com\n10/15/2017\n\n\
-Game of Life algorithm is property \nof John Horton Conway", font=("Calibri", 8))
+label4 = Label(speed_frame, width=(window_dimensions // 16),
+               text=("\nPython implementation of \nConway's Game Of Life.\n GUI created with Tkinter\n \n"
+                     "Code by: Carter Daly-MacPhail \n email: cdalymac@gmail.com \n 10/15/2017\n \n Game of Life algorithm is property \n of John Horton Conway"),
+               font=("Calibri", 8))
 label4.grid(row=3, column=0, columnspan=2)
 
 speed_slider = Scale(speed_frame, from_=10, to=1000, orient=HORIZONTAL)
